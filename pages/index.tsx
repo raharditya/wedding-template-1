@@ -2,6 +2,7 @@ import { Button } from '@chakra-ui/button';
 import { Input } from '@chakra-ui/input';
 import { Box, Center, Container, Heading, Text, SimpleGrid, VStack, HStack, Divider } from '@chakra-ui/layout';
 import { Textarea } from '@chakra-ui/textarea';
+import { useBreakpointValue } from '@chakra-ui/react';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGift } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,6 +15,8 @@ import EventCard from '../components/EventCard';
 import GuestBookItem from '../components/GuestBookItem';
 
 export default function Home() {
+  const isMobile = useBreakpointValue({ base: true, sm: false });
+
   const mockDate = new Date('1 Sep 2022');
   return (
     <div>
@@ -26,17 +29,17 @@ export default function Home() {
       <Box as="main">
         <Center as="section" h="100vh">
           <Container as={VStack} spacing="24" maxW="container.md" textAlign="center">
-            <Heading fontSize="24" color="#B66965">
+            <Heading fontSize={{ base: '18', lg: '24' }} color="#B66965">
               Dear Firdaus Algim, you are invited to
             </Heading>
             <Box>
-              <Heading fontSize={{ sm: '28', lg: '36' }} color="main" opacity="80%">
+              <Heading fontSize={{ base: '26', lg: '36' }} color="main" opacity="80%">
                 The Wedding Of
               </Heading>
-              <Heading as="h1" fontFamily="Sacramento" fontSize={{ sm: '32', lg: '64' }} color="main">
+              <Heading as="h1" fontFamily="Sacramento" fontSize={{ base: '38', lg: '64' }} color="main">
                 Addin &amp; Anis
               </Heading>
-              <Heading fontSize="28" color="main" opacity="80%">
+              <Heading fontSize={{ base: '20', lg: '28' }} color="main" opacity="80%">
                 September 3rd, 2022
               </Heading>
             </Box>
@@ -44,9 +47,9 @@ export default function Home() {
         </Center>
 
         <Box as="section" bg="bg" py="24">
-          <Container as={VStack} spacing="32" maxW="container.lg" textAlign="center">
+          <Container as={VStack} spacing="32" maxW="container.lg" px="6" textAlign="center">
             <Box p="4" rounded="lg" bg="cardBg" color="white">
-              <Text fontSize="lg">
+              <Text fontSize={{ base: 'base', lg: 'lg' }}>
                 “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
                 sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih
                 dan sayang”
@@ -55,7 +58,13 @@ export default function Home() {
               </Text>
             </Box>
 
-            <SimpleGrid templateColumns={{ md: '1fr', lg: '4fr 1fr 4fr' }} gap="8" alignItems="center" w="80%">
+            <SimpleGrid
+              templateColumns={{ md: '1fr', lg: '4fr 1fr 4fr' }}
+              gap={{ base: '4', lg: '8' }}
+              alignItems="center"
+              w={{ base: 'full', lg: '80%' }}
+              px="8"
+            >
               <ClientCard
                 name={
                   <>
@@ -101,8 +110,13 @@ export default function Home() {
         </Box>
 
         <Box as="section" py="20">
-          <Container as={VStack} spacing="32" maxW="container.lg" textAlign="center">
-            <SimpleGrid templateColumns={{ md: '1fr', lg: '4fr 1fr 4fr' }} gap="8" alignItems="center" w="full">
+          <Container as={VStack} spacing="32" maxW="container.lg" textAlign="center" px="6">
+            <SimpleGrid
+              templateColumns={{ md: '1fr', lg: '4fr 1px 4fr' }}
+              gap={{ base: '12', lg: '8' }}
+              alignItems="center"
+              w="full"
+            >
               <EventCard
                 title="Akad Nikah"
                 date="3"
@@ -110,7 +124,7 @@ export default function Home() {
                 place="Hotel handayani. Jl. Kembar No. 205 Indramayu, Jawa Barat"
                 mapUrl="https://goo.gl/maps/N3FkGFM82YEUSmyX8"
               />
-              <Divider orientation="vertical" />
+              <Divider orientation={isMobile ? 'horizontal' : 'vertical'} />
               <EventCard
                 title="Ngunduh Mantu"
                 date="10"
@@ -121,7 +135,7 @@ export default function Home() {
             </SimpleGrid>
 
             <VStack spacing="8">
-              <Heading fontSize="3xl" color="main">
+              <Heading fontSize={{ base: '2xl', lg: '3xl' }} color="main">
                 Counting Down To The Big Day
               </Heading>
               <Countdown
@@ -129,47 +143,47 @@ export default function Home() {
                 renderer={(props) => (
                   <HStack spacing="3">
                     <VStack>
-                      <Center boxSize="16" bg="#C88358" rounded="xl">
-                        <Text fontFamily="Satisfy" fontSize="3xl" color="white" pt="2">
+                      <Center boxSize={{ base: '12', lg: '16' }} bg="#C88358" rounded="xl">
+                        <Text fontFamily="Satisfy" fontSize={{ base: '2xl', lg: '3xl' }} color="white" pt="2">
                           {props.days}
                         </Text>
                       </Center>
                       <Text color="main">Hari</Text>
                     </VStack>
 
-                    <Text fontSize="2xl" color="main" pb="8">
+                    <Text fontSize="2xl" color="main" pb={{ base: '9', lg: '8' }}>
                       :
                     </Text>
 
                     <VStack>
-                      <Center boxSize="16" bg="#C88358" rounded="xl">
-                        <Text fontFamily="Satisfy" fontSize="3xl" color="white" pt="2">
+                      <Center boxSize={{ base: '12', lg: '16' }} bg="#C88358" rounded="xl">
+                        <Text fontFamily="Satisfy" fontSize={{ base: '2xl', lg: '3xl' }} color="white" pt="2">
                           {props.hours}
                         </Text>
                       </Center>
                       <Text color="main">Jam</Text>
                     </VStack>
 
-                    <Text fontSize="2xl" color="main" pb="8">
+                    <Text fontSize="2xl" color="main" pb={{ base: '9', lg: '8' }}>
                       :
                     </Text>
 
                     <VStack>
-                      <Center boxSize="16" bg="#C88358" rounded="xl">
-                        <Text fontFamily="Satisfy" fontSize="3xl" color="white" pt="2">
+                      <Center boxSize={{ base: '12', lg: '16' }} bg="#C88358" rounded="xl">
+                        <Text fontFamily="Satisfy" fontSize={{ base: '2xl', lg: '3xl' }} color="white" pt="2">
                           {props.minutes}
                         </Text>
                       </Center>
                       <Text color="main">Menit</Text>
                     </VStack>
 
-                    <Text fontSize="2xl" color="main" pb="8">
+                    <Text fontSize="2xl" color="main" pb={{ base: '9', lg: '8' }}>
                       :
                     </Text>
 
                     <VStack>
-                      <Center boxSize="16" bg="#C88358" rounded="xl">
-                        <Text fontFamily="Satisfy" fontSize="3xl" color="white" pt="2">
+                      <Center boxSize={{ base: '12', lg: '16' }} bg="#C88358" rounded="xl">
+                        <Text fontFamily="Satisfy" fontSize={{ base: '2xl', lg: '3xl' }} color="white" pt="2">
                           {props.seconds}
                         </Text>
                       </Center>
@@ -182,10 +196,10 @@ export default function Home() {
 
             <VStack spacing="6" color="main">
               <VStack>
-                <Heading fontSize="3xl" color="main">
+                <Heading fontSize={{ base: '2xl', lg: '3xl' }} color="main">
                   Wedding Gift
                 </Heading>
-                <Text w="60%" fontSize="lg">
+                <Text w={{ base: 'full', lg: '60%' }} fontSize={{ base: 'base', lg: 'lg' }}>
                   Bagi keluarga dan sahabat yang ingin mengirimkan hadiah, silakan mengirimkannya melalui tautan
                   berikut:
                 </Text>

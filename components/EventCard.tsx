@@ -13,7 +13,7 @@ type EventCardProps = {
 
 const EventCard = ({ title, date, subDate, place, mapUrl }: EventCardProps) => {
   return (
-    <VStack spacing="6" minW="xs" textAlign="center" color="main">
+    <VStack spacing="6" minW="xs" textAlign="center" color="main" w="full">
       <Heading fontSize="2xl">{title}</Heading>
       <Box fontFamily="Satisfy">
         <Text mb="-3" fontSize="4xl">

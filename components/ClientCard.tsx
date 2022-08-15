@@ -20,10 +20,10 @@ const ClientCard = ({ name, parents, socials }: ClientCardProps) => {
       pt="3"
       color="white"
       textAlign="start"
-      minW="xs"
+      minW={{ base: 'auto', lg: 'xs' }}
       alignItems="flex-start"
     >
-      <Text fontFamily="Satisfy" fontSize="3xl" mb="-1">
+      <Text fontFamily="Satisfy" fontSize={{ base: '2xl', lg: '3xl' }} mb="-1">
         {name}
       </Text>
 
