@@ -45,7 +45,7 @@ const Home = () => {
   useEffect(() => {
     setClientTransitionHeight(clientTransitionRef.current.clientHeight);
     setGuestTransitionHeight(guestTransitionRef.current.clientHeight);
-  });
+  }, [clientTransitionRef, guestTransitionRef]);
 
   // FIREBASE
   const [guestBooks, setGuestBooks] = useState<GuestBook[]>([]);
@@ -56,8 +56,6 @@ const Home = () => {
   const [message, setMessage] = useState<string>('');
 
   useEffect(() => {
-    if (guestBooks.length > 0) return;
-
     setIsLoading(true);
 
     const getGuestBook = async () => {
