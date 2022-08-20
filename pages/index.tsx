@@ -523,7 +523,7 @@ const Home = () => {
           </Container>
 
           <Image
-            src="/addin-anis/assets/guest-books-transition.svg"
+            src="/addin-anis/assets/guest-book-transition.svg"
             pos="absolute"
             top={`${guestTransitionHeight * -1 + 2}px`}
             w="full"
