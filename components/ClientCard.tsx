@@ -50,7 +50,7 @@ const ClientCard = ({ name, parents, decoration, socials }: ClientCardProps) => 
 
       <HStack bg="white" w="full" rounded="md" px="2" py="1">
         <Circle size="10" bg="cardBg">
-          <Image src="/assets/parents-icon.svg" />
+          <Image src="/assets/parents-icon.svg" alt="" />
         </Circle>
         <Text color="main">{parents}</Text>
       </HStack>

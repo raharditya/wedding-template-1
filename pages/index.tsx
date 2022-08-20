@@ -134,7 +134,15 @@ const Home = () => {
             </Fade>
           </Container>
 
-          <Image src="/assets/hero-flower-1.png" pos="absolute" top="0" w="250px" userSelect="none" zIndex="10" />
+          <Image
+            src="/assets/hero-flower-1.png"
+            pos="absolute"
+            top="0"
+            w="250px"
+            userSelect="none"
+            zIndex="10"
+            alt=""
+          />
           <Image
             src="/assets/hero-flower-2.png"
             pos="absolute"
@@ -142,9 +150,17 @@ const Home = () => {
             w={{ base: '270px', lg: '300px' }}
             userSelect="none"
             zIndex="10"
+            alt=""
           />
-          <Image src="/assets/hero-main-bg.png" pos="absolute" bottom="-2px" w="500px" userSelect="none" zIndex="0" />
-          {/* <Hero pos="absolute" bottom="-2px" w="500px" userSelect="none" zIndex="0" /> */}
+          <Image
+            src="/assets/hero-main-bg.png"
+            pos="absolute"
+            bottom="-2px"
+            w="500px"
+            userSelect="none"
+            zIndex="0"
+            alt=""
+          />
           <Image
             src="/assets/hero-main-bg.png"
             pos="absolute"
@@ -155,6 +171,7 @@ const Home = () => {
             userSelect="none"
             zIndex="0"
             display={{ base: 'none', lg: 'block' }}
+            alt=""
           />
           <Image
             src="/assets/hero-main-bg.png"
@@ -165,8 +182,9 @@ const Home = () => {
             w="500px"
             userSelect="none"
             zIndex="0"
+            alt=""
           />
-          <Image src="/assets/hero-transition.svg" pos="absolute" bottom="-2px" w="full" userSelect="none" />
+          <Image src="/assets/hero-transition.svg" pos="absolute" bottom="-2px" w="full" userSelect="none" alt="" />
         </Center>
 
         <Box as="section" bg="bg" py="16" pos="relative">
@@ -206,7 +224,14 @@ const Home = () => {
                     </>
                   }
                   decoration={
-                    <Image src="/assets/client-flower-1.png" pos="absolute" top="-45%" right="-20%" width="180px" />
+                    <Image
+                      src="/assets/client-flower-1.png"
+                      pos="absolute"
+                      top="-45%"
+                      right="-20%"
+                      width="180px"
+                      alt=""
+                    />
                   }
                   socials={[
                     { title: 'instagram', logo: <FontAwesomeIcon icon={faInstagram} />, url: 'https://instagram.com' },
@@ -237,7 +262,14 @@ const Home = () => {
                     </>
                   }
                   decoration={
-                    <Image src="/assets/client-flower-2.png" pos="absolute" top="-33%" right="-15%" width="140px" />
+                    <Image
+                      src="/assets/client-flower-2.png"
+                      pos="absolute"
+                      top="-33%"
+                      right="-15%"
+                      width="140px"
+                      alt=""
+                    />
                   }
                   socials={[
                     { title: 'instagram', logo: <FontAwesomeIcon icon={faInstagram} />, url: 'https://instagram.com' },
@@ -255,6 +287,7 @@ const Home = () => {
             // bottom="0"
             userSelect="none"
             ref={clientTransitionRef}
+            alt=""
           />
           <Image
             src="/assets/event-flower-1.png"
@@ -264,6 +297,7 @@ const Home = () => {
             h={{ base: '120px', lg: '250px' }}
             userSelect="none"
             zIndex="10"
+            alt=""
           />
           <Image
             src="/assets/event-flower-2.png"
@@ -273,6 +307,7 @@ const Home = () => {
             h={{ base: '70px', lg: '130px' }}
             userSelect="none"
             zIndex="10"
+            alt=""
           />
         </Box>
 
@@ -407,6 +442,7 @@ const Home = () => {
             w="50%"
             userSelect="none"
             zIndex="0"
+            alt=""
           />
         </Box>
 
@@ -488,6 +524,7 @@ const Home = () => {
             w="full"
             userSelect="none"
             ref={guestTransitionRef}
+            alt=""
           />
         </Box>
       </Box>
