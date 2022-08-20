@@ -22,7 +22,7 @@ const GuestBookPage = () => {
   useEffect(() => {
     const getGuestBook = async () => {
       setIsLoading(true);
-      const q = query(collection(db, 'guest-book'), orderBy('createdAt', 'desc'));
+      const q = query(collection(db, 'guest-books'), orderBy('createdAt', 'desc'));
 
       const querySnapshot = await getDocs(q);
       const data = [];
