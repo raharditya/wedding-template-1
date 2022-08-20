@@ -34,7 +34,7 @@ const Home = () => {
   const isMobile = useBreakpointValue({ base: true, sm: false });
   const giftModal = useDisclosure();
   const router = useRouter();
-  const receiverName = router.query.nama;
+  const receiverName = router.query.to;
 
   const clientTransitionRef = useRef(null);
   const [clientTransitionHeight, setClientTransitionHeight] = useState(0);
