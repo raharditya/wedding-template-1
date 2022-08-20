@@ -133,7 +133,7 @@ const Home = () => {
           </Container>
 
           <Image
-            src="/assets/hero-flower-1.png"
+            src="/addin-anis/assets/hero-flower-1.png"
             pos="absolute"
             top="0"
             w="250px"
@@ -142,7 +142,7 @@ const Home = () => {
             alt=""
           />
           <Image
-            src="/assets/hero-flower-2.png"
+            src="/addin-anis/assets/hero-flower-2.png"
             pos="absolute"
             bottom={{ base: '-4%', lg: '-2px' }}
             w={{ base: '270px', lg: '300px' }}
@@ -151,7 +151,7 @@ const Home = () => {
             alt=""
           />
           <Image
-            src="/assets/hero-main-bg.png"
+            src="/addin-anis/assets/hero-main-bg.png"
             pos="absolute"
             bottom="-2px"
             w="500px"
@@ -160,7 +160,7 @@ const Home = () => {
             alt=""
           />
           <Image
-            src="/assets/hero-main-bg.png"
+            src="/addin-anis/assets/hero-main-bg.png"
             pos="absolute"
             top="-20%"
             right="-5%"
@@ -172,7 +172,7 @@ const Home = () => {
             alt=""
           />
           <Image
-            src="/assets/hero-main-bg.png"
+            src="/addin-anis/assets/hero-main-bg.png"
             pos="absolute"
             top="-20%"
             left="-5%"
@@ -182,7 +182,14 @@ const Home = () => {
             zIndex="0"
             alt=""
           />
-          <Image src="/assets/hero-transition.svg" pos="absolute" bottom="-2px" w="full" userSelect="none" alt="" />
+          <Image
+            src="/addin-anis/assets/hero-transition.svg"
+            pos="absolute"
+            bottom="-2px"
+            w="full"
+            userSelect="none"
+            alt=""
+          />
         </Center>
 
         <Box as="section" bg="bg" py="16" pos="relative">
@@ -223,7 +230,7 @@ const Home = () => {
                   }
                   decoration={
                     <Image
-                      src="/assets/client-flower-1.png"
+                      src="/addin-anis/assets/client-flower-1.png"
                       pos="absolute"
                       top="-45%"
                       right="-20%"
@@ -261,7 +268,7 @@ const Home = () => {
                   }
                   decoration={
                     <Image
-                      src="/assets/client-flower-2.png"
+                      src="/addin-anis/assets/client-flower-2.png"
                       pos="absolute"
                       top="-33%"
                       right="-15%"
@@ -278,7 +285,7 @@ const Home = () => {
           </Container>
 
           <Image
-            src="/assets/client-transition.svg"
+            src="/addin-anis/assets/client-transition.svg"
             pos="absolute"
             width="full"
             bottom={`${clientTransitionHeight * -1 + 2}px`}
@@ -288,7 +295,7 @@ const Home = () => {
             alt=""
           />
           <Image
-            src="/assets/event-flower-1.png"
+            src="/addin-anis/assets/event-flower-1.png"
             pos="absolute"
             bottom={{ base: '-10%', xl: '-40%', '2xl': '-50%' }}
             left={{ base: '7%', lg: '15%' }}
@@ -298,7 +305,7 @@ const Home = () => {
             alt=""
           />
           <Image
-            src="/assets/event-flower-2.png"
+            src="/addin-anis/assets/event-flower-2.png"
             pos="absolute"
             bottom={{ base: '-5%', lg: '-19%' }}
             right={{ base: '2%', lg: '5%' }}
@@ -433,7 +440,7 @@ const Home = () => {
           </Container>
 
           <Image
-            src="/assets/event-main-bg.png"
+            src="/addin-anis/assets/event-main-bg.png"
             pos="absolute"
             bottom={`${guestTransitionHeight / 2 - 8}px`}
             right="0%"
@@ -516,7 +523,7 @@ const Home = () => {
           </Container>
 
           <Image
-            src="/assets/guest-book-transition.svg"
+            src="/addin-anis/assets/guest-book-transition.svg"
             pos="absolute"
             top={`${guestTransitionHeight * -1 + 2}px`}
             w="full"
