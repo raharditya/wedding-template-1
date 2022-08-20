@@ -60,7 +60,7 @@ const GuestBookPage = () => {
           guestBooks.length > 0 ? (
             <SimpleGrid templateColumns={{ base: '1fr', lg: 'repeat(3, 1fr)' }} w="full" gap="4">
               {guestBooks.map((item, i) => (
-                <GuestBookItem name={item.name} message={item.message} />
+                <GuestBookItem key={i} name={item.name} message={item.message} />
               ))}
             </SimpleGrid>
           ) : (
