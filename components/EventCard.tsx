@@ -7,11 +7,12 @@ type EventCardProps = {
   title: string;
   date: string;
   subDate: string;
+  time: string;
   place: React.ReactNode;
   mapUrl: string;
 };
 
-const EventCard = ({ title, date, subDate, place, mapUrl }: EventCardProps) => {
+const EventCard = ({ title, date, subDate, time, place, mapUrl }: EventCardProps) => {
   return (
     <VStack spacing="6" minW="xs" textAlign="center" color="main" w="full">
       <Heading fontSize="2xl">{title}</Heading>
@@ -20,6 +21,7 @@ const EventCard = ({ title, date, subDate, place, mapUrl }: EventCardProps) => {
           {date}
         </Text>
         <Text fontSize="2xl">{subDate}</Text>
+        <Text fontSize="md">{time}</Text>
       </Box>
 
       <Text fontSize="lg" lineHeight="5" w="80%">

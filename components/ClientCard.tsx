@@ -1,8 +1,10 @@
 import { Circle, HStack, Text, VStack } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/react';
 
 type ClientCardProps = {
   name: React.ReactNode;
   parents: React.ReactNode;
+  decoration: React.ReactNode;
   socials: {
     title: string;
     logo: React.ReactNode;
@@ -10,7 +12,7 @@ type ClientCardProps = {
   }[];
 };
 
-const ClientCard = ({ name, parents, socials }: ClientCardProps) => {
+const ClientCard = ({ name, parents, decoration, socials }: ClientCardProps) => {
   return (
     <VStack
       spacing="4"
@@ -22,6 +24,7 @@ const ClientCard = ({ name, parents, socials }: ClientCardProps) => {
       textAlign="start"
       minW={{ base: 'auto', lg: 'xs' }}
       alignItems="flex-start"
+      pos="relative"
     >
       <Text fontFamily="Satisfy" fontSize={{ base: '2xl', lg: '3xl' }} mb="-1">
         {name}
@@ -46,9 +49,13 @@ const ClientCard = ({ name, parents, socials }: ClientCardProps) => {
       </HStack>
 
       <HStack bg="white" w="full" rounded="md" px="2" py="1">
-        <Circle size="10" bg="cardBg" />
+        <Circle size="10" bg="cardBg">
+          <Image src="/assets/parents-icon.svg" />
+        </Circle>
         <Text color="main">{parents}</Text>
       </HStack>
+
+      {decoration}
     </VStack>
   );
 };

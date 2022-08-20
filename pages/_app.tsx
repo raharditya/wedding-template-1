@@ -1,4 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/provider';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import '@fontsource/glass-antiqua';
 import '@fontsource/port-lligat-sans';
@@ -11,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
+      <ToastContainer />
     </ChakraProvider>
   );
 }
