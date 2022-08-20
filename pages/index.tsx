@@ -45,7 +45,7 @@ const Home = () => {
   useEffect(() => {
     setClientTransitionHeight(clientTransitionRef.current.clientHeight);
     setGuestTransitionHeight(guestTransitionRef.current.clientHeight);
-  }, [clientTransitionRef, guestTransitionRef]);
+  });
 
   // FIREBASE
   const [guestBooks, setGuestBooks] = useState<GuestBook[]>([]);
