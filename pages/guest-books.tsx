@@ -42,7 +42,7 @@ const GuestBookPage = () => {
       <Head>
         <title>Guest Book - Addin & Anis</title>
         <meta name="description" content="The wedding of Addin & Anis" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/addin-anis/favicon.ico" />
       </Head>
 
       <Container as={VStack} spacing="10" maxW="container.lg" textAlign="center" py="10" px="6">

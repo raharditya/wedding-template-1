@@ -95,7 +95,7 @@ const Home = () => {
       <Head>
         <title>Addin & Anis</title>
         <meta name="description" content="The wedding of Addin & Anis" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/addin-anis/favicon.ico" />
       </Head>
 
       <Box as="main" overflowX="hidden">
