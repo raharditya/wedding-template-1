@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  basePath: '/addin-anis',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
