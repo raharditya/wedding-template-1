@@ -55,6 +55,7 @@ const EventSection = ({ clientTransitionHeight, guestBookTransitionHeight }: Eve
             >
               <EventCard
                 title="Akad Nikah"
+                day="Sabtu"
                 date="3"
                 subDate="September 2022"
                 time="09.00 - 14.00"
@@ -64,10 +65,11 @@ const EventSection = ({ clientTransitionHeight, guestBookTransitionHeight }: Eve
               <Divider orientation={isMobile ? 'horizontal' : 'vertical'} />
               <EventCard
                 title="Ngunduh Mantu"
+                day="Sabtu"
                 date="10"
                 subDate="September 2022"
                 time="09.00 - Selesai"
-                place="Keden RT 01/RW 04, Sidoharjo, Wonogiri, Jawa Tengah"
+                place="Keden RT 01/RW 04, Sidoharjo, Sidoharjo, Wonogiri, Jawa Tengah"
                 mapUrl="https://maps.app.goo.gl/5Zbcz2BafQ9U5CZe6"
               />
             </SimpleGrid>

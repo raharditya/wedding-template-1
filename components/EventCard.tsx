@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type EventCardProps = {
   title: string;
+  day: string;
   date: string;
   subDate: string;
   time: string;
@@ -12,11 +13,12 @@ type EventCardProps = {
   mapUrl: string;
 };
 
-const EventCard = ({ title, date, subDate, time, place, mapUrl }: EventCardProps) => {
+const EventCard = ({ title, day, date, subDate, time, place, mapUrl }: EventCardProps) => {
   return (
     <VStack spacing="6" minW="xs" textAlign="center" color="main" w="full">
       <Heading fontSize="2xl">{title}</Heading>
       <Box fontFamily="Satisfy">
+        <Text fontSize="2xl">{day}</Text>
         <Text mb="-3" fontSize="4xl">
           {date}
         </Text>
