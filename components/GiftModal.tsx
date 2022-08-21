@@ -31,7 +31,7 @@ const GiftModal = ({ isOpen, onClose, ...props }: Pick<ModalProps, 'isOpen' | 'o
 
   return (
     <Modal
-      size={{ base: 'sm', lg: 'xl' }}
+      size={{ base: 'xs', lg: 'xl' }}
       isOpen={Boolean(isOpen)}
       onClose={onClose as () => void}
       closeOnEsc={false}
