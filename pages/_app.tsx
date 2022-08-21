@@ -7,7 +7,7 @@ import '@fontsource/port-lligat-sans';
 import '@fontsource/sacramento';
 import '@fontsource/satisfy';
 
-import theme from '../theme';
+import theme from 'theme';
 
 function MyApp({ Component, pageProps }) {
   return (

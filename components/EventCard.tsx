@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/button';
 import { Box, Heading, Text, VStack } from '@chakra-ui/layout';
-import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type EventCardProps = {
@@ -34,7 +34,7 @@ const EventCard = ({ title, date, subDate, time, place, mapUrl }: EventCardProps
         rel="noopener noreferrer"
         href={mapUrl}
         colorScheme="blue"
-        leftIcon={<FontAwesomeIcon icon={faLocationPin} />}
+        leftIcon={<FontAwesomeIcon icon={faLocationDot} />}
       >
         Lihat Lokasi
       </Button>

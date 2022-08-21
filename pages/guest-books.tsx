@@ -6,9 +6,9 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import GuestBookItem from '../components/GuestBookItem';
+import GuestBookItem from 'components/GuestBookItem';
 
-import { db } from '../lib/firebase/initFirebase';
+import { db } from 'lib/firebase/initFirebase';
 
 type GuestBook = {
   name: string;

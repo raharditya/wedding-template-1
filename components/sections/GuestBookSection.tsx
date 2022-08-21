@@ -16,6 +16,8 @@ import {
 } from '@chakra-ui/react';
 import { collection, query, addDoc, orderBy, limit, getDocs, serverTimestamp } from 'firebase/firestore';
 import { toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 
@@ -105,6 +107,7 @@ const GuestBookSection = ({ transitionHeight, setTransitionHeight }: GuestBookSe
                 colorScheme="green"
                 isDisabled={!name || !message}
                 isLoading={isSubmitting}
+                leftIcon={<FontAwesomeIcon icon={faPaperPlane} />}
                 onClick={() => sendGuestBook({ name, message })}
               >
                 Kirim Pesan

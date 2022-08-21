@@ -66,7 +66,11 @@ const ClientSection = ({ transitionHeight, setTransitionHeight }: ClientSectionP
                 />
               }
               socials={[
-                { title: 'instagram', logo: <FontAwesomeIcon icon={faInstagram} />, url: 'https://instagram.com' },
+                {
+                  title: 'instagram',
+                  logo: <FontAwesomeIcon icon={faInstagram} />,
+                  url: 'https://instagram.com/addinsyaf?igshid=YmMyMTA2M2Y=',
+                },
               ]}
             />
           </Fade>
@@ -104,7 +108,11 @@ const ClientSection = ({ transitionHeight, setTransitionHeight }: ClientSectionP
                 />
               }
               socials={[
-                { title: 'instagram', logo: <FontAwesomeIcon icon={faInstagram} />, url: 'https://instagram.com' },
+                {
+                  title: 'instagram',
+                  logo: <FontAwesomeIcon icon={faInstagram} />,
+                  url: 'https://instagram.com/anisatviyana?igshid=YmMyMTA2M2Y=',
+                },
               ]}
             />
           </Fade>
